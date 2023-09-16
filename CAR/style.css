@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(rgba(0, 0, 255, 0.678),black);
+    overflow: hidden;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 20px;
+    color:white;
+    animation: header 3s ease-in-out;
+    color:red;
+}
+li:hover{
+    color:yellowgreen;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+} 
+nav li{
+    display:inline-block;
+    margin:10px 20px;
+    font-weight: 600;
+    
+}
+.main{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.content{
+    width:50%;
+    color:white;
+    margin-top:8%;
+    margin-left:5%;
+    overflow: hidden;
+    animation: content 3s ease-in-out;
+}
+@keyframes content{
+    0%{
+        opacity:0;
+        transform:translateX(-100%);
+    }
+}
+.content h1{
+    font-size: 70px;
+    margin-bottom:1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+.content h3{
+    font-size: 20px;
+    margin-bottom:3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color:rgba(255, 255, 0, 0.637);
+}
+span{
+    color:rgba(255, 255, 0, 0.637);
+}
+.content p{
+    font-size:20px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgba(255, 255, 0, 0.637);
+}
+button{
+    border-radius:5px;
+    padding: 10px;
+    background: transparent;
+    color:white;
+    font-size:15px;
+}
+button:hover{
+    background-color:yellowgreen;
+    color:black;
+    font-weight: 500;
+}
+.car{
+    width:50%;
+    margin-top:6%;
+    z-index:-1;
+}
+img{
+    width:40rem;
+    animation: car 5s ease-in-out;
+}
+@keyframes car{
+0%{
+    transform: translateX(100%);
+}
+100%{
+    transform:translateX(-220%);
+}
+}
+@media screen and (max-width:1200px) {
+    .main{
+        display:flex;
+        align-items:center;
+    }
+    .content{
+        width:100%;
+        text-align: center;
+    }
+    .car{
+        width:100%;
+        position: absolute;
+        bottom: 3%;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width:25rem;
+    }
+}
+@media screen and (max-width:576px) {
+    
+    .content{
+        width:100%;
+        text-align: center;
+        }
+    .content h1,h3,p{
+        margin-bottom: 5%;
+    }
+    .car{
+        width:100%;
+        position: absolute;
+        bottom: 3%;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width:30rem;
+    }
+}
+
+
+
+
+
